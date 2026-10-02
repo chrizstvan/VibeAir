@@ -1,0 +1,29 @@
+location_id,name,lat,lon,provider,is_monitor,is_mobile,pm25_sensor_id,params,last_utc,age_hours
+2537,US Diplomatic Post: Jakarta South,-6.236585,106.793335,StateAir JakartaSouth,True,False,5047.0,pm25,2016-11-09T16:00:00Z,86735.08418580056
+2538,US Diplomatic Post: Jakarta Central,-6.182382,106.834094,StateAir JakartaCentral,True,False,5048.0,pm25,2016-11-09T16:00:00Z,86735.08418580056
+8320,Jakarta South,-6.236704,106.793244,AirNow,True,False,5077558.0,pm25,2025-11-04T21:00:00Z,7962.084185800555
+8637,Jakarta Central,-6.182536,106.834235,AirNow,True,False,25072.0,"o3,pm25",2025-04-09T14:00:00Z,12985.084185800557
+223262,Cilandek,-6.274138909,106.799896471,HabitatMap,False,False,1294751.0,pm25,,
+223824,Cilandek,-6.274094251,106.79987099,HabitatMap,False,False,1296386.0,pm25,,
+1367443,Depok,-6.409456,106.856152,AirGradient,False,False,6658670.0,"pm1,pm10,pm25,pm25,relativehumidity,temperature,temperature,um003",2025-12-20T07:00:00Z,6872.084185800555
+1489107,Cipete,-6.273957945,106.799961515,HabitatMap,False,False,6836394.0,pm25,,
+1563313,Qoryah Darussalam,-6.3612408,106.8419476,AirGradient,False,False,6939684.0,"pm1,pm1,pm10,pm10,pm25,relativehumidity,temperature,um003",2025-10-17T17:00:00Z,8398.084185800555
+1776543,Jihan Fauziah Hamdi ,-6.2210686,106.8254998,AirGradient,False,False,7325489.0,"pm1,pm1,pm10,pm10,pm25,relativehumidity,temperature,um003",2024-05-26T00:00:00Z,20631.084185800555
+1894639,Jakarta,-6.09657,106.96135,Clarity,False,False,7748548.0,"pm1,pm10,pm25,temperature,temperature",2026-08-31T11:24:13Z,771.6805746894445
+2071976,Krukut,-6.159382,106.818018,AirGradient,False,False,7666066.0,"pm1,pm1,pm10,pm10,pm25,relativehumidity,temperature,um003",2024-09-10T08:00:00Z,18055.084185800555
+2849176,Margonda Residence 3 ,-6.386604881271759,106.82669253666032,AirGradient,False,False,9238695.0,"pm1,pm10,pm25,relativehumidity,temperature,um003",2024-09-04T05:00:00Z,18202.084185800555
+3084738,Jaja,-6.396635576845471,106.8234376822199,AirGradient,False,False,10776462.0,"pm1,pm10,pm25,relativehumidity,temperature,um003",2024-10-01T09:00:00Z,17550.084185800555
+3276989,Cipete Jakarta,-6.274033597,106.799931675,HabitatMap,False,False,11361991.0,pm25,,
+3280117,Cipete Jakarta,-6.27404826,106.799946763,HabitatMap,False,False,11385217.0,pm25,,
+3294802,Cipete Dec,-6.274064257,106.799920946,HabitatMap,False,False,11494947.0,pm25,,
+6051931,West Jakarta Mayor Office,-6.18588,106.737892,Clean Air Catalyst,True,False,14313799.0,"pm25,relativehumidity,temperature,wind_direction,wind_speed",2025-06-30T16:00:00Z,11015.084185800557
+6051932,East Jakarta Mayor Office,-6.214719,106.944138,Clean Air Catalyst,True,False,14313802.0,"bc_370,bc_880,pm25,relativehumidity,temperature,wind_direction,wind_speed",2025-06-30T16:00:00Z,11015.084185800557
+6051933,Rusunawa Marunda,-6.096695,106.960983,Clean Air Catalyst,True,False,14313805.0,"pm25,relativehumidity,temperature,wind_direction,wind_speed",2025-06-30T16:00:00Z,11015.084185800557
+6051934,North Jakarta,-6.153814,106.910934,Clean Air Catalyst,False,False,,"bc_370,bc_880",,
+6051935,South Jakarta,-6.356961,106.803696,Clean Air Catalyst,False,False,,"bc_370,bc_880",,
+6051936,East Jakarta,-6.288934,106.90918,Clean Air Catalyst,False,False,,"bc_370,bc_880",,
+6051937,West Jakarta,-6.207228,106.752571,Clean Air Catalyst,False,False,,"bc_370,bc_880",,
+6095641,D'Mall Depok,-6.386761061456651,106.82661840203917,AirGradient,False,False,14378952.0,"pm1,pm25,relativehumidity,temperature,um003",2025-11-22T14:00:00Z,7537.084185800555
+6409860,Jakarta home open storage room (19-07-2026 @ 17.01),-6.216456709,106.829211675,HabitatMap,False,False,16668746.0,pm25,,
+6455006,BMKG 1,-6.1557694,106.8423941,AirGradient,False,False,17000275.0,"pm1,pm25,relativehumidity,temperature,um003",2026-10-02T14:00:00Z,1.0841858005555556
+6539694,Griya Tugu Asri,-6.36319,106.84176,AirGradient,False,False,17620437.0,"pm1,pm25,relativehumidity,temperature,um003",2026-10-02T14:00:00Z,1.0841858005555556
