@@ -2,3 +2,5 @@
 .venv/
 .DS_Store
 data/analytics/
+__pycache__/
+*.pyc
