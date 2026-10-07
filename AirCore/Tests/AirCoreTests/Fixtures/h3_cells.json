@@ -1,0 +1,293 @@
+{
+  "h3_versions": {
+    "c": "4.5.0",
+    "python": "4.5.0"
+  },
+  "cells": [
+    {
+      "name": "monas",
+      "lat": -6.1754,
+      "lon": 106.8272,
+      "res": 6,
+      "cell_hex": "868c1079fffffff",
+      "cell_uint64": "605946388374618111",
+      "center_lat": -6.181583618202315,
+      "center_lon": 106.8431381269314,
+      "disk1": [
+        "868c106a7ffffff",
+        "868c106b7ffffff",
+        "868c10787ffffff",
+        "868c1078fffffff",
+        "868c10797ffffff",
+        "868c1079fffffff",
+        "868c12b6fffffff"
+      ]
+    },
+    {
+      "name": "monas",
+      "lat": -6.1754,
+      "lon": 106.8272,
+      "res": 7,
+      "cell_hex": "878c1079bffffff",
+      "cell_uint64": "610449987934879743",
+      "center_lat": -6.166381395631944,
+      "center_lon": 106.82779718980096,
+      "disk1": [
+        "878c106a6ffffff",
+        "878c106b4ffffff",
+        "878c106b5ffffff",
+        "878c10798ffffff",
+        "878c10799ffffff",
+        "878c1079affffff",
+        "878c1079bffffff"
+      ]
+    },
+    {
+      "name": "monas",
+      "lat": -6.1754,
+      "lon": 106.8272,
+      "res": 8,
+      "cell_hex": "888c1079b9fffff",
+      "cell_uint64": "614953587555958783",
+      "center_lat": -6.173759200190176,
+      "center_lon": 106.83123816279455,
+      "disk1": [
+        "888c107983fffff",
+        "888c107987fffff",
+        "888c107995fffff",
+        "888c1079b1fffff",
+        "888c1079b9fffff",
+        "888c1079bbfffff",
+        "888c1079bdfffff"
+      ]
+    },
+    {
+      "name": "bekasi",
+      "lat": -6.238,
+      "lon": 106.976,
+      "res": 6,
+      "cell_hex": "868c104efffffff",
+      "cell_uint64": "605946376831893503",
+      "center_lat": -6.239416319485876,
+      "center_lon": 106.9855504813338,
+      "disk1": [
+        "868c10457ffffff",
+        "868c1045fffffff",
+        "868c104c7ffffff",
+        "868c104cfffffff",
+        "868c104e7ffffff",
+        "868c104efffffff",
+        "868c107b7ffffff"
+      ]
+    },
+    {
+      "name": "bekasi",
+      "lat": -6.238,
+      "lon": 106.976,
+      "res": 7,
+      "cell_hex": "878c104e8ffffff",
+      "cell_uint64": "610449976341823487",
+      "center_lat": -6.239416319485876,
+      "center_lon": 106.9855504813338,
+      "disk1": [
+        "878c104e8ffffff",
+        "878c104e9ffffff",
+        "878c104eaffffff",
+        "878c104ebffffff",
+        "878c104ecffffff",
+        "878c104edffffff",
+        "878c104eeffffff"
+      ]
+    },
+    {
+      "name": "bekasi",
+      "lat": -6.238,
+      "lon": 106.976,
+      "res": 8,
+      "cell_hex": "888c104e83fffff",
+      "cell_uint64": "614953575956611071",
+      "center_lat": -6.238973350518702,
+      "center_lon": 106.9771011589777,
+      "disk1": [
+        "888c104e81fffff",
+        "888c104e83fffff",
+        "888c104e87fffff",
+        "888c104e8bfffff",
+        "888c104e95fffff",
+        "888c104e9dfffff",
+        "888c104eb9fffff"
+      ]
+    },
+    {
+      "name": "depok",
+      "lat": -6.402,
+      "lon": 106.794,
+      "res": 6,
+      "cell_hex": "868c1072fffffff",
+      "cell_uint64": "605946386495569919",
+      "center_lat": -6.430092689523957,
+      "center_lon": 106.7859414145004,
+      "disk1": [
+        "868c100d7ffffff",
+        "868c100dfffffff",
+        "868c10707ffffff",
+        "868c1070fffffff",
+        "868c10727ffffff",
+        "868c1072fffffff",
+        "868c10777ffffff"
+      ]
+    },
+    {
+      "name": "depok",
+      "lat": -6.402,
+      "lon": 106.794,
+      "res": 7,
+      "cell_hex": "878c1072affffff",
+      "cell_uint64": "610449986039054335",
+      "center_lat": -6.408901426592068,
+      "center_lon": 106.79253244986104,
+      "disk1": [
+        "878c10701ffffff",
+        "878c10705ffffff",
+        "878c1070cffffff",
+        "878c10728ffffff",
+        "878c1072affffff",
+        "878c1072bffffff",
+        "878c1072effffff"
+      ]
+    },
+    {
+      "name": "depok",
+      "lat": -6.402,
+      "lon": 106.794,
+      "res": 8,
+      "cell_hex": "888c1072a5fffff",
+      "cell_uint64": "614953585655939071",
+      "center_lat": -6.401983781546775,
+      "center_lon": 106.79754817979958,
+      "disk1": [
+        "888c107019fffff",
+        "888c10701bfffff",
+        "888c107053fffff",
+        "888c1072a1fffff",
+        "888c1072a5fffff",
+        "888c1072a7fffff",
+        "888c1072adfffff"
+      ]
+    },
+    {
+      "name": "tangerang",
+      "lat": -6.178,
+      "lon": 106.632,
+      "res": 6,
+      "cell_hex": "868c106c7ffffff",
+      "cell_uint64": "605946384750739455",
+      "center_lat": -6.168996646245538,
+      "center_lon": 106.60608988381654,
+      "disk1": [
+        "868c106c7ffffff",
+        "868c106cfffffff",
+        "868c106d7ffffff",
+        "868c106dfffffff",
+        "868c106e7ffffff",
+        "868c106efffffff",
+        "868c106f7ffffff"
+      ]
+    },
+    {
+      "name": "tangerang",
+      "lat": -6.178,
+      "lon": 106.632,
+      "res": 7,
+      "cell_hex": "878c106f1ffffff",
+      "cell_uint64": "610449985082753023",
+      "center_lat": -6.178185757264947,
+      "center_lon": 106.64342754805469,
+      "disk1": [
+        "878c106c4ffffff",
+        "878c106c6ffffff",
+        "878c106e2ffffff",
+        "878c106f0ffffff",
+        "878c106f1ffffff",
+        "878c106f3ffffff",
+        "878c106f5ffffff"
+      ]
+    },
+    {
+      "name": "tangerang",
+      "lat": -6.178,
+      "lon": 106.632,
+      "res": 8,
+      "cell_hex": "888c106f13fffff",
+      "cell_uint64": "614953584697540607",
+      "center_lat": -6.177734830358769,
+      "center_lon": 106.63495668872434,
+      "disk1": [
+        "888c106c45fffff",
+        "888c106c4dfffff",
+        "888c106c69fffff",
+        "888c106f11fffff",
+        "888c106f13fffff",
+        "888c106f17fffff",
+        "888c106f1bfffff"
+      ]
+    },
+    {
+      "name": "bogor",
+      "lat": -6.595,
+      "lon": 106.816,
+      "res": 6,
+      "cell_hex": "868c100e7ffffff",
+      "cell_uint64": "605946359517806591",
+      "center_lat": -6.581373511177755,
+      "center_lon": 106.79898844780283,
+      "disk1": [
+        "868c1000fffffff",
+        "868c1001fffffff",
+        "868c10057ffffff",
+        "868c100c7ffffff",
+        "868c100e7ffffff",
+        "868c100efffffff",
+        "868c100f7ffffff"
+      ]
+    },
+    {
+      "name": "bogor",
+      "lat": -6.595,
+      "lon": 106.816,
+      "res": 7,
+      "cell_hex": "878c100e4ffffff",
+      "cell_uint64": "610449959094845439",
+      "center_lat": -6.596491869413276,
+      "center_lon": 106.81431338064664,
+      "disk1": [
+        "878c1000affffff",
+        "878c1000bffffff",
+        "878c10019ffffff",
+        "878c100e0ffffff",
+        "878c100e4ffffff",
+        "878c100e5ffffff",
+        "878c100e6ffffff"
+      ]
+    },
+    {
+      "name": "bogor",
+      "lat": -6.595,
+      "lon": 106.816,
+      "res": 8,
+      "cell_hex": "888c100e41fffff",
+      "cell_uint64": "614953558707535871",
+      "center_lat": -6.596491869413276,
+      "center_lon": 106.81431338064664,
+      "disk1": [
+        "888c100e41fffff",
+        "888c100e43fffff",
+        "888c100e45fffff",
+        "888c100e47fffff",
+        "888c100e49fffff",
+        "888c100e4bfffff",
+        "888c100e4dfffff"
+      ]
+    }
+  ]
+}

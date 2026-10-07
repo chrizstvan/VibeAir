@@ -1,6 +1,23 @@
+# secret
 .env
+
+# python
 .venv/
-.DS_Store
-data/analytics/
 __pycache__/
 *.pyc
+.ipynb_checkpoints/
+
+# swift
+.build/
+.swiftpm/
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store
+
+# data
+spike/data/analytics/
+spike/raw/openmeteo/
+spike/raw/collector/
+spike/raw/openaq/
