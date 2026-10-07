@@ -20,7 +20,10 @@ def call(client, url, **params):
 
 inv = pd.read_csv("data/sensor/inventory.csv")
 location = inv[inv.pm25_sensor_id.notna()].location_id.astype(int).tolist()
-snap = {"schedule_for": os.environ.get("SCHEDULE_FOR"), "fetched_at": run.isoformat(), "openaq": {}, "openmeteo": None}
+scheduled = run.replace(minute=7, second=0, microsecond=0)
+snap = {"scheduled_for": scheduled.isoformat(),
+        "fetched_at": run.isoformat(),
+        "openaq": {}, "openmeteo": None}
 
 with httpx.Client(headers=HEADERS, timeout=30) as c:
     snap["openmeteo"] = call(c, OM, 

@@ -1,7 +1,5 @@
 name: spike-collector
 on:
-  schedule:
-    - cron: "7 * * * *"      
   workflow_dispatch:
 
 concurrency:
@@ -31,7 +29,6 @@ jobs:
         working-directory: spike
         env:
           OPENAQ_API_KEY: ${{ secrets.OPENAQ_API_KEY }}
-          SCHEDULED_FOR: ${{ github.event.schedule }}
         run: |
           mkdir -p raw/collector
           python collector.py
