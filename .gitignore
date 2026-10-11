@@ -21,3 +21,8 @@ spike/data/analytics/
 spike/raw/openmeteo/
 spike/raw/collector/
 spike/raw/openaq/
+spike/raw/airgradient/
+spike/raw/waqi/
+spike/raw/sensorcommunity/
+spike/raw/purpleair/
+spike/data/sensor/

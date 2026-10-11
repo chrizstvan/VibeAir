@@ -1,15 +1,18 @@
 import os, json, time, datetime as dt
-import httpx, pandas as pd
+from pathlib import Path
+import httpx
 from dotenv import load_dotenv
-from points import POINTS
 
 load_dotenv()
-OAQ = "https://api.openaq.org/v3"
-OM = "https://air-quality-api.open-meteo.com/v1/air-quality"
-HEADERS = {"X-API-Key": os.environ["OPENAQ_API_KEY"]}
+BASE = Path(__file__).resolve().parent
+WAQI = "https://api.waqi.info"
+TOKEN = os.environ["WAQI_TOKEN"]
+AG_URL = "https://api.airgradient.com/public/api/v1/world/locations/measures/current"
+MIN_LON, MIN_LAT, MAX_LON, MAX_LAT = 106.4, -6.6, 107.2, -6.0
 run = dt.datetime.now(dt.timezone.utc)
 
 def call(client, url, **params):
+    """Satu panggilan API. Kegagalan dicatat, bukan menghentikan script."""
     t0 = time.monotonic()
     try:
         r = client.get(url, params=params)
@@ -18,19 +21,29 @@ def call(client, url, **params):
     except httpx.HTTPError as e:
         return {"status": None, "ms": round((time.monotonic() - t0) * 1000), "error": repr(e)}
 
-inv = pd.read_csv("data/sensor/inventory.csv")
-location = inv[inv.pm25_sensor_id.notna()].location_id.astype(int).tolist()
-scheduled = run.replace(minute=7, second=0, microsecond=0)
-snap = {"scheduled_for": scheduled.isoformat(),
+def di_kotak(x):
+    lat, lon = x.get("latitude"), x.get("longitude")
+    return lat is not None and lon is not None and MIN_LAT <= lat <= MAX_LAT and MIN_LON <= lon <= MAX_LON
+
+snap = {"scheduled_for": run.replace(minute=7, second=0, microsecond=0).isoformat(),
         "fetched_at": run.isoformat(),
-        "openaq": {}, "openmeteo": None}
+        "waqi_bounds": None, "waqi": {}, "airgradient": None}
 
-with httpx.Client(headers=HEADERS, timeout=30) as c:
-    snap["openmeteo"] = call(c, OM, 
-        latitude=",".join(str(p["lat"]) for p in POINTS),
-        longitude=",".join(str(p["lon"]) for p in POINTS),
-        current="pm2_5,us_aqi", domains="cams_global",
-        cell_selection="nearest", timezone="GMT")
+with httpx.Client(timeout=30) as c:
+    snap["waqi_bounds"] = call(c, f"{WAQI}/v2/map/bounds",
+                               latlng=f"{MIN_LAT},{MIN_LON},{MAX_LAT},{MAX_LON}",
+                               networks="all", token=TOKEN)
+    for s in (snap["waqi_bounds"].get("body") or {}).get("data", []):
+        snap["waqi"][s["uid"]] = call(c, f"{WAQI}/feed/@{s['uid']}/", token=TOKEN)
+        time.sleep(1)
 
-with open(f"raw/collector/{run:%Y%m%dT%H%M}.json", "w") as f:
+    ag = call(c, AG_URL)
+    if isinstance(ag.get("body"), list):
+        ag["body"] = [x for x in ag["body"] if di_kotak(x)]
+    snap["airgradient"] = ag
+
+out = BASE / "raw" / "collector"
+out.mkdir(parents=True, exist_ok=True)
+with open(out / f"{run:%Y%m%dT%H%M}.json", "w") as f:
     json.dump(snap, f)
+print("waqi:", len(snap["waqi"]), "stasiun | airgradient:", len(snap["airgradient"].get("body") or []))
