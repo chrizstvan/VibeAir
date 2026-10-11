@@ -10,4 +10,9 @@ import Foundation
 public struct Coordinate: Sendable, Hashable {
     public let latitude: Double      // derajat
     public let longitude: Double     // derajat
+    
+    public init(latitude: Double, longitude: Double) {
+        self.latitude = latitude
+        self.longitude = longitude
+    }
 }
