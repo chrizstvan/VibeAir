@@ -27,3 +27,7 @@ spike/raw/sensorcommunity/
 spike/raw/purpleair/
 spike/data/sensor/
 spike/raw/stage2/
+Server/.env
+Server/.build/
+Server/Package.resolved
+.vscode/
