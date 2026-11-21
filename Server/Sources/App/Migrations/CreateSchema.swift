@@ -3,19 +3,19 @@ import SQLKit
 
 struct CreateSchema: AsyncMigration {
     func prepare(on database: Database) async throws {
-            let sql = database as! SQLDatabase
-            for statement in Self.statements {
-                try await sql.raw(SQLQueryString(statement)).run()
-            }
+        let sql = database as! SQLDatabase
+        for statement in Self.statements {
+            try await sql.raw(SQLQueryString(statement)).run()
         }
-
-        func revert(on database: Database) async throws {
-            let sql = database as! SQLDatabase
-            for table in ["readings", "calibration_factors", "cycles", "stations", "sources"] {
-                let statement = "drop table if exists \(table) cascade"
-                try await sql.raw(SQLQueryString(statement)).run()
-            }
+    }
+    
+    func revert(on database: Database) async throws {
+        let sql = database as! SQLDatabase
+        for table in ["readings", "calibration_factors", "cycles", "stations", "sources"] {
+            let statement = "drop table if exists \(table) cascade"
+            try await sql.raw(SQLQueryString(statement)).run()
         }
+    }
     
     static let statements: [String] = [
         "create extension if not exists postgis",
