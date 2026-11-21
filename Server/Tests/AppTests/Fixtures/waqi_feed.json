@@ -1,0 +1,36 @@
+{
+  "status": "ok",
+  "data": {
+    "aqi": 95,
+    "idx": -900001,
+    "attributions": [
+      {
+        "url": "https://example.org/",
+        "name": "Lembaga Contoh",
+        "station": "stasiun_contoh_selatan"
+      },
+      {
+        "url": "https://waqi.info/",
+        "name": "World Air Quality Index Project"
+      }
+    ],
+    "city": {
+      "geo": [-6.25, 106.8],
+      "name": "Stasiun Contoh Selatan",
+      "url": "https://example.org/station/contoh",
+      "location": "Lokasi karangan untuk test"
+    },
+    "dominentpol": "pm25",
+    "iaqi": {
+      "co": { "v": "-" },
+      "no2": { "v": 40 },
+      "pm10": { "v": 70 },
+      "pm25": { "v": 95 }
+    },
+    "time": {
+      "s": "2026-11-04 05:00:00",
+      "tz": "+07:00",
+      "iso": "2026-11-03T22:00:00Z"
+    }
+  }
+}
