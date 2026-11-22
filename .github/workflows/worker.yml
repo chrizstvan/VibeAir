@@ -1,0 +1,28 @@
+name: worker
+on: workflow_dispatch
+permissions:
+  contents: read
+concurrency:
+  group: worker
+  cancel-in-progress: false
+jobs:
+  run-cycle:
+    runs-on: ubuntu-latest
+    container: swift:6.0
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: Server/.build
+          key: server-${{ hashFiles('Server/Package.resolved', 'Server/Sources/**', 'AirCore/Sources/**') }}
+          restore-keys: server-
+      - name: Build
+        working-directory: Server
+        run: swift build -c release
+      - name: Run cycle
+        working-directory: Server
+        env:
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          WAQI_TOKEN: ${{ secrets.WAQI_TOKEN }}
+        run: .build/release/App run-cycle --env production
